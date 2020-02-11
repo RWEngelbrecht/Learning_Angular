@@ -19,12 +19,10 @@ export class AddToDoComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('add-to-do comp: onSubmit reached');
     const todo = {
       title: this.title,
       completed: false
     };
-
     this.addTodo.emit(todo);
   }
 

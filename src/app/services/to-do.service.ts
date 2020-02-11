@@ -36,7 +36,7 @@ export class ToDoService {
   }
 
   addTodo(todo: ToDo): Observable<ToDo> {
-    console.log(`todo-service comp: onSubmit reached  ${todo.title}`);
+    console.log("todoService: "+todo.title);
     return this.http.post<ToDo>(this.todosUrl, todo, httpOptions);
   }
 }
